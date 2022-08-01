@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/all/style.css" />
+    <title>Frontend Mentor | Space tourism website</title>
+
+    <script
+      src="https://kit.fontawesome.com/57fea9cc7d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body-destination">
+    <nav>
+      <div class="nav-center">
+        <div class="nav-header">
+          <img src="./assets/shared/logo.svg" class="logo" alt="logo" />
+          <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <ul class="links">
+          <li>
+            <a href="index.html" class="linkk" id="btnIndex"
+              ><b>00</b> &nbsp; Home</a
+            >
+          </li>
+          <li>
+            <a href="destination-moon.html" class="linkk active" id="btnDest"
+              ><b>01</b> &nbsp; Destination</a
+            >
+          </li>
+          <li>
+            <a href="crew-commander.html" class="linkk" id="btnCrew"
+              ><b>02</b> &nbsp; Crew</a
+            >
+          </li>
+          <li>
+            <a href="technology-vehicle.html" class="linkk" id="btnTech"
+              ><b>03</b> &nbsp; Technology</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="destination">
+      <div class="destination-container">
+        <p>
+          <span class="destination-number">01</span> &nbsp; Pick your
+          destination
+        </p>
+      </div>
+      <div class="container">
+        <div class="planet-img">
+          <img
+            src="./assets/destination/image-moon.png"
+            id="image-destination"
+            alt=""
+          />
+        </div>
+        <div class="planet-desc">
+          <div class="planets">
+            <ul>
+              <li class="btn-dest active" id="btnMoon">MOON</li>
+              <li class="btn-dest" id="btnMars">MARS</li>
+              <li class="btn-dest" id="btnEuropa">EUROPA</li>
+              <li class="btn-dest" id="btnTitan">TITAN</li>
+            </ul>
+          </div>
+          <div class="planet-text">
+            <h1 id="destination-name">Moon</h1>
+            <p id="destination-text">
+              See our planet as you’ve never seen it before. A perfect relaxing
+              trip away to help regain perspective and come back refreshed.
+              While you’re there, take in some history by visiting the Luna 2
+              and Apollo 11 landing sites.
+            </p>
+          </div>
+          <div class="planet-bottom">
+            <div class="distance">
+              <p>Avg. distance</p>
+              <h4 id="destination-distance">384,400 km</h4>
+            </div>
+            <div class="travel">
+              <p>Est. travel time</p>
+              <h4 id="destination-travel">3 days</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="/all/script.js"></script>
+    <script src="/all/script-dest.js"></script>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="/all/style.css" />
+    <title>Frontend Mentor | Space tourism website</title>
+
+    <script
+      src="https://kit.fontawesome.com/57fea9cc7d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body-crew">
+    <nav>
+      <div class="nav-center">
+        <div class="nav-header">
+          <img src="./assets/shared/logo.svg" class="logo" alt="logo" />
+          <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <ul class="links">
+          <li>
+            <a href="index.html" class="linkk" id="btnIndex"
+              ><b>00</b> &nbsp; Home</a
+            >
+          </li>
+          <li>
+            <a href="destination-moon.html" class="linkk" id="btnDest"
+              ><b>01</b> &nbsp; Destination</a
+            >
+          </li>
+          <li>
+            <a href="crew-commander.html" class="linkk active" id="btnCrew"
+              ><b>02</b> &nbsp; Crew</a
+            >
+          </li>
+          <li>
+            <a href="technology-vehicle.html" class="linkk" id="btnTech"
+              ><b>03</b> &nbsp; Technology</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="destination">
+      <div class="destination-container">
+        <p><span class="destination-number">02 </span> &nbsp; Meet your crew</p>
+      </div>
+      <div class="container-crew">
+        <div id="crew-job">Commander</div>
+        <div id="crew-name">Douglas Hurley</div>
+        <div id="crew-desc">
+          Douglas Gerald Hurley is an American engineer, former Marine Corps
+          pilot and former NASA astronaut. He launched into space for the third
+          time as commander of Crew Dragon Demo-2.
+        </div>
+        <div class="btns">
+          <button class="button-crew active" id="btnone"></button>
+          <button class="button-crew" id="btntwo"></button>
+          <button class="button-crew" id="btnthree"></button>
+          <button class="button-crew" id="btnfour"></button>
+        </div>
+      </div>
+      <div class="crew-image">
+        <img
+          src="./assets/crew/image-douglas-hurley.png"
+          alt=""
+          id="person-img"
+        />
+      </div>
+    </section>
+
+    <script src="/all/script.js"></script>
+    <script src="/all/script-crew.js"></script>
+  </body>
+</html>

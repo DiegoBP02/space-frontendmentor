@@ -1,0 +1,743 @@
+:root {
+  --transtion: all 0.3s linear;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cinzel", Arial, Helvetica, sans-serif;
+  background-image: url(/all/assets/home/background-home-desktop.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+
+nav {
+  margin-top: 25px;
+  backdrop-filter: blur(40px);
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.nav-toggle {
+  font-size: 1.5rem;
+  background: transparent;
+  border-color: transparent;
+  transition: var(--transtion);
+  cursor: pointer;
+  color: white;
+}
+
+.nav-toggle:hover {
+  color: white;
+  transform: rotate(90deg);
+}
+
+.logo {
+  height: 40px;
+}
+
+.links a {
+  color: gray;
+  font-size: 1rem;
+  text-transform: uppercase;
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: var(--transtion);
+  font-size: 0.85rem;
+  color: white;
+  letter-spacing: 1.5px;
+  font-family: "Cinzel", Arial, Helvetica, sans-serif;
+}
+
+.links a:hover {
+  background: hsl(210, 31%, 80%);
+  color: hsl(205, 78%, 60%);
+  padding-left: 0.5rem;
+}
+
+.links {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transtion);
+}
+
+.show-links {
+  height: 10rem;
+}
+
+.section-content {
+  margin: 0 auto;
+  width: 1170px;
+  height: 70vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.content {
+  display: flex;
+  width: 400px;
+  height: auto;
+  margin-left: 150px;
+}
+
+.text {
+  color: white;
+}
+
+.text h3 {
+  font-size: 20px;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #999;
+}
+
+.text h1 {
+  font-size: 100px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.text p {
+  font-size: 14px;
+  font-weight: 100;
+  color: rgb(182, 175, 175);
+}
+
+.explore {
+  margin-right: 150px;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.explore:hover {
+  cursor: pointer;
+}
+
+.explore p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.body-destination {
+  background-image: url(/all/assets/destination/background-destination-desktop.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+
+.destination {
+  width: 70vw;
+  height: 100vh;
+  margin: 0 auto;
+  color: white;
+}
+
+.destination-container {
+  margin-top: 30px;
+}
+
+.destination-container .destination-number {
+  color: #474b57;
+}
+
+.destination-container p {
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.planet-img {
+  display: inline-block;
+}
+
+.planet-img img {
+  width: 350px;
+  height: 350px;
+  margin-top: 30px;
+  margin-left: 70px;
+  margin-right: 100px;
+}
+
+.planet-desc {
+  margin-top: 30px;
+  padding-right: 60px;
+  color: white;
+}
+
+.planets ul {
+  display: flex;
+}
+
+.planets li {
+  margin-right: 20px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+}
+
+.planets li:hover {
+  cursor: pointer;
+}
+
+.planets li.active {
+  border-bottom: 2px solid white;
+}
+
+.planet-text {
+  margin-top: 25px;
+}
+
+.planet-text h1 {
+  font-size: 60px;
+  font-weight: 100;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.planet-text p {
+  font-size: 12px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid white;
+  color: rgb(182, 175, 175);
+}
+
+.planet-bottom {
+  padding-top: 15px;
+  display: flex;
+  text-transform: uppercase;
+}
+
+.planet-bottom p {
+  font-size: 10px;
+}
+
+.planet-bottom h4 {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.planet-bottom .distance {
+  margin-right: 40px;
+}
+
+.body-crew {
+  background-image: url(/all/assets/crew/background-crew-desktop.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+
+.crew-all {
+  display: flex;
+}
+
+.container-crew {
+  width: 35vw;
+  display: inline-block;
+}
+
+#crew-job {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #9396a0;
+}
+
+#crew-name {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+#crew-desc {
+  font-size: 18px;
+  color: #7c7f93;
+}
+
+.btns {
+  margin-top: 50px;
+}
+
+.btns button {
+  width: 15px;
+  height: 15px;
+  border-radius: 7.5px;
+  border: transparent;
+  background-color: #555;
+  margin-right: 15px;
+}
+
+.btns button:hover {
+  cursor: pointer;
+}
+
+.btns button.active {
+  background-color: white;
+}
+
+.crew-image {
+  display: inline-block;
+  position: fixed;
+  bottom: -30px;
+  width: 400px;
+  height: 400px;
+  margin-left: 60px;
+}
+
+.crew-image img {
+  width: 400px;
+  height: 400px;
+}
+
+.body-technology {
+  background-image: url(/all/assets/technology/background-technology-desktop.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+
+.tech-btns {
+  display: inline-block;
+  margin-right: 60px;
+}
+
+.tech-btn {
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  background-color: black;
+  color: white;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: 1px solid white;
+}
+
+.tech-btn:hover {
+  cursor: pointer;
+}
+
+.tech-btn.active {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.tech-btn:first-child {
+  margin-top: 70px;
+}
+
+.container-tech {
+  width: 35vw;
+  display: inline-block;
+  margin-top: 70px;
+}
+
+.tech-main {
+  display: flex;
+  align-items: flex-start;
+}
+
+#tech-start {
+  color: #9396a0;
+  font-size: 1rem;
+}
+
+#tech-title {
+  color: white;
+  font-size: 3rem;
+}
+
+#tech-desc {
+  color: rgb(182, 175, 175);
+}
+
+#tech-img {
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+  padding-left: 100px;
+}
+
+#tech-img img {
+  width: 400px;
+  height: 400px;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 7rem 1rem 0rem;
+    height: 80px;
+  }
+  .nav-header {
+    padding: 0;
+  }
+  .nav-toggle {
+    display: none;
+  }
+
+  .links {
+    height: 80px;
+    display: flex;
+    align-items: center;
+  }
+  .links a {
+    padding: 0;
+    margin: 0 1.5rem;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid transparent;
+  }
+  .links a:hover,
+  .links a.active {
+    padding: 0;
+    background: transparent;
+    border-bottom: 2px solid white;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 800px) {
+  .section-content {
+    margin: 0 auto;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .content {
+    margin: 0;
+    width: 500px;
+  }
+
+  .text {
+    text-align: center;
+    margin-top: 75px;
+  }
+
+  .text h3 {
+    font-size: 2rem;
+  }
+
+  .text h1 {
+    font-size: 10rem;
+  }
+
+  .text p {
+    font-size: 1.5rem;
+  }
+
+  .explore {
+    margin: 0;
+    margin-top: 75px;
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+  }
+
+  .explore p {
+    font-size: 2.5rem;
+  }
+
+  .destination-container p {
+    font-size: 1.5rem;
+  }
+
+  .planet-img img {
+    margin-right: 30px;
+  }
+
+  .planets li {
+    font-size: 1.25rem;
+  }
+
+  .planet-desc {
+    padding-right: 70px;
+  }
+
+  .planet-text p {
+    font-size: 1.25rem;
+  }
+
+  .distance p,
+  .travel p {
+    font-size: 0.8rem;
+  }
+
+  .distance h4,
+  .travel h4 {
+    font-size: 1.5rem;
+  }
+
+  .destination-distance {
+    font-size: 1.5rem;
+  }
+
+  .body-crew {
+    overflow: auto;
+  }
+
+  .destination {
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .btns {
+    position: relative;
+    bottom: auto;
+    margin: 50px 0;
+  }
+
+  .crew-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: auto;
+    margin-left: 0;
+  }
+
+  .crew-image img {
+    width: 40vw;
+    height: auto;
+  }
+
+  .container-crew {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  .btns button {
+    width: 25px;
+    height: 25px;
+    border-radius: 12.5px;
+  }
+
+  .body-technology {
+    overflow: auto;
+  }
+
+  .tech-main {
+    display: block;
+  }
+
+  .container-tech {
+    width: auto;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  #tech-start {
+    font-size: 2rem;
+  }
+
+  #tech-title {
+    font-size: 4rem;
+  }
+
+  #tech-desc {
+    font-size: 1.35rem;
+    margin-bottom: 50px;
+  }
+
+  #tech-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: auto;
+    height: auto;
+  }
+
+  #tech-img img {
+    width: 280px;
+    height: 280px;
+  }
+
+  .tech-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .tech-btn {
+    margin: 0;
+    margin-right: 25px;
+  }
+
+  .tech-btn:first-child {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    overflow: hidden;
+  }
+
+  .destination-container {
+    font-size: 1.15rem;
+  }
+
+  .section-content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+
+  .explore {
+    margin-right: 0;
+  }
+
+  .container {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .planet-img img {
+    width: 60vw;
+    height: auto;
+    margin: 0;
+  }
+
+  .planet-desc {
+    padding-right: 0;
+  }
+
+  .body-crew {
+    overflow: auto;
+  }
+
+  .destination {
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .btns {
+    position: relative;
+    bottom: auto;
+    margin: 50px 0;
+  }
+
+  .crew-image {
+    display: block;
+    position: relative;
+    bottom: auto;
+    margin-left: 0;
+  }
+
+  .crew-image img {
+    width: 70vw;
+    height: auto;
+  }
+
+  .container-crew {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  .btns button {
+    width: 25px;
+    height: 25px;
+    border-radius: 12.5px;
+  }
+
+  .body-technology {
+    overflow: auto;
+  }
+
+  .tech-main {
+    display: block;
+  }
+
+  .container-tech {
+    width: auto;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  #tech-start {
+    font-size: 2rem;
+  }
+
+  #tech-title {
+    font-size: 4rem;
+  }
+
+  #tech-desc {
+    font-size: 1.35rem;
+    margin-bottom: 50px;
+  }
+
+  #tech-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: auto;
+    height: auto;
+  }
+
+  #tech-img img {
+    width: 280px;
+    height: 280px;
+  }
+
+  .tech-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .tech-btn {
+    margin: 0;
+    margin-right: 25px;
+  }
+
+  .tech-btn:first-child {
+    margin-top: 0;
+  }
+}
