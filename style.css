@@ -124,10 +124,16 @@ nav {
   align-items: center;
   justify-content: center;
   background-color: white;
+  color: black;
 }
 
 .explore:hover {
   cursor: pointer;
+  color: #999;
+}
+
+.explore:active {
+  color: #999;
 }
 
 .explore p {
@@ -468,6 +474,10 @@ nav {
     font-size: 2.5rem;
   }
 
+  .body-destination {
+    overflow: scroll;
+  }
+
   .destination-container p {
     font-size: 1.5rem;
   }
@@ -604,10 +614,6 @@ nav {
 }
 
 @media (max-width: 480px) {
-  html {
-    overflow: hidden;
-  }
-
   .destination-container {
     font-size: 1.15rem;
   }
@@ -644,7 +650,7 @@ nav {
   }
 
   .body-crew {
-    overflow: auto;
+    overflow: scroll;
   }
 
   .destination {
@@ -673,7 +679,7 @@ nav {
   }
 
   .container-crew {
-    width: 100%;
+    width: 100vw;
     display: block;
     text-align: center;
   }
@@ -685,7 +691,7 @@ nav {
   }
 
   .body-technology {
-    overflow: auto;
+    overflow: scroll;
   }
 
   .tech-main {
@@ -693,9 +699,10 @@ nav {
   }
 
   .container-tech {
-    width: auto;
+    width: 80vw;
     text-align: center;
     margin-top: 50px;
+    word-break: break-word;
   }
 
   #tech-start {
@@ -703,7 +710,7 @@ nav {
   }
 
   #tech-title {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 
   #tech-desc {
